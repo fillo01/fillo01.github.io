@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>music player</title>
+        <style>
+          *{
+             margin: 0;
+             padding: 0;
+             font-family: 'poppins', sans-serif;
+             box-sizing: border-box;
+          }
+          .container{
+            width: 100%;
+            height: 100vh;
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+          }
+          .music-player{
+            background: #ffe0e5;
+            width: 400px;
+            padding: 100px 55px;
+            text-align: center;
+          }
+          .rotate{
+            width: 260px;
+            border-radius: 55%;
+            border: 8px solid #fff;
+            box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+            position:center;
+            animation: rotation 15s infinite linear;
+          }
+          .music-player h1{
+             font-size: 20px;
+             font-weight: 400;
+             color: blueviolet;
+             margin-top: 20px;
+          }
+          .music-player p{
+            font-size: 14px;
+            color: yellowgreen;
+          }
+          .musics{
+            background: purple;
+            border: 0;
+            
+          }
+          @keyframes rotation{
+            from{
+              transform: rotate(0deg);
+            }
+            to{
+              transform: rotate(359deg);
+            }
+          }
+        </style>
+        <script src="https://kit.fontawesome.com/c4254e24a8.js"  crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+          <div class="music-player">
+            <img src="w/_MG_3638.jpg" class="rotate">
+            <h1>Loving home</h1>
+            <p><marquee>Edsheraan ft survie</marquee></p><br>
+            <audio controls class="musics">
+                <source src="media/(3).mp3" type="audio/mpeg">
+            </audio>
+
+          </div>
+        </div>
+    </body>
+</html>
